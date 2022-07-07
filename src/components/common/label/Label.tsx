@@ -6,5 +6,5 @@ interface Props {
 }
 
 export const Label: FC<Props> = ({ value }) => {
-    return <Wrapper>{value.toUpperCase()}</Wrapper>
+    return <Wrapper>{value?.toUpperCase()}</Wrapper>
 }
