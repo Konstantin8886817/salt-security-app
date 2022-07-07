@@ -1,3 +1,4 @@
+import { Pre } from '@blueprintjs/core';
 import { Checkbox, Label } from '../components';
 
 export const columnsScheme: Array<{ key: string; label: string; component: JSX.Element }> = [
@@ -22,3 +23,7 @@ export const columnsScheme: Array<{ key: string; label: string; component: JSX.E
 		component: <Label value={''} />,
 	},
 ];
+
+export const renderEmptyData = () => {
+	return <Pre>{'Data not exist'}</Pre>
+}
