@@ -8,15 +8,15 @@ interface Props {
 }
 
 export const Checkbox: FC<Props> = ({ label, value, onChange }) => {
-	const [isChecked, toggleIsChecked] = useState(value);
+	const [isChecked, setIsChecked] = useState(value);
 
 	useEffect(() => {
-		toggleIsChecked(value);
+		setIsChecked(value);
 	}, [value]);
 
 	const handleOnChange = () => {
 		onChange && onChange(!value);
-		toggleIsChecked(!isChecked);
+		setIsChecked(!isChecked);
 	};
 
 	return (
