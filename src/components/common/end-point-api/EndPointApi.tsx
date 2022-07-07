@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Container, IconStyled, SecondText, Text, Wrapper } from './EndPointApi.styled';
 
 interface Props {
-	items: [];
+	items: Array<{text: string}>;
 }
 
 enum IconType {

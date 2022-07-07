@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import './table-header.less';
 import { ColumnStyled, HeaderWrapper } from './TableHeader.styled';
 
-interface Props {
+export interface Props {
 	columns: string[];
 }
 
